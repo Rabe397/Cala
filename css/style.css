@@ -61,6 +61,7 @@ section{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 .site-header nav{
     width: 40%;
@@ -129,7 +130,9 @@ section{
 .display-none{
     display: none;
 }
+
 /* main-section */
+
 .main-info-container{
     text-align: center;
     color: white;
