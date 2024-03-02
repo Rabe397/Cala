@@ -1,0 +1,118 @@
+/* in-touch-sec */
+.start-side p{
+    margin-top: 5px;
+}
+.start-side h3{
+    margin-top: 10px;
+}
+.contact-info div{
+    margin-top: 15px;
+}
+.contact-info div.flex-wrap{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contact-info span{
+    display: block;
+}
+/* message-section */
+.message-section-container{
+    border: 1px solid black;
+    padding: 20px;
+}
+.message-section-container form{
+    width: 60%;
+}
+.message-section-container form p{
+    margin-top: 30px;
+}
+.message-section-container input , .message-section-container textarea{
+    width: 70%;
+}
+.message-section-container input{
+    display: block;
+    margin: 10px 0;
+    padding: 3px;
+}
+.message-section-container textarea{
+    resize: none;
+    padding: 3px;
+}
+.mess-btn{
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+}
+.team-part{
+    width: 35%;
+}
+.team-box{
+    margin-bottom: 20px;
+}
+.team-box.flex{
+    justify-content: unset;
+    gap: 50px;
+}
+.team-box img{
+    width: 70px;
+    height: 70px;
+}
+.member-info{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* media-query */
+@media(max-width: 1024px){
+    /* in-touch-section */
+    .in-touch-container.flex{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .in-touch-container .start-side{
+        align-self: flex-start;
+    }
+    /* .in-touch-container .last-side{
+        width: 80%;
+    } */
+    .in-touch-container .last-side iframe{
+        max-width: 100%;
+        height: 300px;
+    }
+}
+@media(max-width: 768px){
+    /* message-section */
+    .message-section-container.flex{
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 30px;
+    }
+    .message-section-container form{
+       width: 100%;
+    }
+    .message-section-container input , .message-section-container textarea{
+       width: 90%;
+    }
+    .team-part{
+       width: 50%;
+    }
+}
+@media(max-width: 320px){
+    /* in-touch-section */
+    .contact-info div{
+        font-size: 0.8rem;
+    }
+    /* message-section */
+    .team-box.flex{
+        gap: 20px;
+    }
+    .team-box img{
+        width: 40px;
+        height: 40px;
+    }
+    .member-info{
+        font-size: 75%;
+    }
+}

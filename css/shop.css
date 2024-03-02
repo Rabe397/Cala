@@ -1,0 +1,25 @@
+/* main-section */
+.shop-main{
+    height: 60vh;
+    background-image: url(../images/shop/accessories-collection.png);
+    background-size: cover; 
+    background-position: center;
+}
+
+/* shop-section */
+.shop-inputs-container{
+    text-align: center;
+    margin: 30px 0;
+}
+.shop-products-container.flex{
+    gap: 30px;
+    flex-wrap: wrap;
+}
+/* media-query */
+@media(max-width: 768px){
+   /* shop-section */
+.shop-inputs-container input{
+    display: block;
+    margin: 0 auto 10px auto;
+} 
+}

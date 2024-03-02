@@ -1,0 +1,99 @@
+/* main-section */
+.home-main{
+    height: 100vh;
+    background-image: url(../images/header.png);
+    background-size: cover; 
+    background-position: center;
+}
+/* features-section */
+
+.features-box{
+    border: 1px solid rgb(214, 210, 210);
+    text-align: center;
+    padding: 20px 20px;
+    transition: 0.2s;
+}
+.features-box img{
+    width: 100px;
+    height: 100px;
+}
+.feature-description{
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+}
+.features-box:hover{
+    transform: scale(1.1);
+}
+.features-box:nth-child(1) .feature-description{
+    background-color:rgb(51, 247, 230);
+}
+.features-box:nth-child(2) .feature-description{
+    background-color:rgb(248, 97, 215);
+}
+.features-box:nth-child(3) .feature-description{
+    background-color:rgb(67, 252, 129);
+}
+.features-box:nth-child(4) .feature-description{
+    background-color:rgb(17, 189, 189);
+}
+.features-box:nth-child(5) .feature-description{
+    background-color:rgb(207, 96, 235);
+}
+.features-box:nth-child(6) .feature-description{
+    background-color:rgb(226, 72, 67);
+}
+/* banar-section */
+.banar-sec{
+    height: 35vh;
+    background-image: url(../images/banner/b2.jpg);
+    background-size: cover;
+}
+.banar-container{
+    color: white;
+    text-align: center;
+}
+.banar-container p{
+    margin: 15px;
+}
+/* newsletter-section  */
+.newsletter-sec{
+    background:linear-gradient(rgb(4, 35, 39),rgb(8, 75, 83),rgb(8, 102, 114));
+    height: 35vh;
+}
+.newsletter-sec.flex{
+    justify-content: unset;
+}
+.newsletter-container{
+    color: white;
+    width: 100%;
+}
+.newsletter-end input , .newsletter-end button{
+    padding: 10px;
+}
+.newsletter-end button{
+    margin-left: -10px;
+}
+/* media-query */
+@media(max-width: 697px){
+    /* features-section  */
+    .features-box img{
+        width: 80px;
+        height: 80px;
+    }
+    /* newsletter-section  */
+    .newsletter-end{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width: 425px){
+    /* newsletter-section  */
+    .newsletter-sec{
+       padding: 35px 0;
+    }
+    .newsletter-sec p , .newsletter-sec input , .newsletter-sec button{
+        font-size: 50%;
+    }
+}
